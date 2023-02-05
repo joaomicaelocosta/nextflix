@@ -1,0 +1,23 @@
+@import '@/styles/modules/global.scss';
+
+nav {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: $primary-color;
+    color: #fff;
+    font-family: Inter-Regular;
+    .item-list {
+        display: flex;
+        gap: 3rem;
+        margin: auto 3.5rem;
+        .item {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #fff;
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+    }
+}

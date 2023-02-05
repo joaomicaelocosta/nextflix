@@ -1,0 +1,52 @@
+@import '@/styles/modules/global.scss';
+.home {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.title {
+    font-size: 4rem;
+    text-align: center;
+    font-family: Inter-Bold;
+    margin-bottom: 5rem;
+    color: $text-color;
+    span {
+        color: $highlight-color;
+    }
+}
+.subtitle {
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Inter-Regular;
+    margin-bottom: 5rem;
+    width: 300px;
+    color: $text-color;
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-family: Inter-Regular;
+    font-size: 2rem;
+    &__movie{
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        padding: 1rem 5rem;
+        color: $highlight-color;
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+    &__show{
+        border: 1px solid $primary-color;
+        background-color: #fff;
+        padding: 1rem 5rem;
+        color: $highlight-color;
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
