@@ -1,0 +1,27 @@
+@import '@/styles/modules/global.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border:1px solid $primary-color;
+    background-color: $primary-color;
+    font-family: Inter-Regular;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 8px;
+    height: 100%;
+    &__title {
+        color: $text-color;
+        flex-grow: 0.5;
+        min-height: 47px;
+    }   
+    img {
+        margin-bottom: 1rem;
+    }
+    &__date {
+        color: $text-color;
+        margin-top: auto;
+        align-self: flex-end;
+    }
+}
